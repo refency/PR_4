@@ -1,18 +1,14 @@
-## Getting Started
+## Использование интерфейсов в Java
+### Ознакомиться с интерфейсами в языке Java и их применением.
+### Студент: Николаев Д.А.
+### Группа: ЗКИ23-17Б
+##### В варианте указано, какой интерфейс и какие классы, его имплементирующие, необходимо реализовать. Функцию, переопределяющую поведение метода интерфейса, необходимо оформить в виде лямбда-выражения.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+#### Особые указания:
+- Запрещено использование аннотаций (исключение - @override).
+- Запрещено использование средств рефлексии (получение и изменение во время выполнения программы информации о типах объектов - Java Reflection API). Исключения - оператор instanceof и метод Object.getClass().
+- Запрещено использование средств API для многопоточности (различные Thread API ) и обработки потоковых данных (различные Stream API).
+- Те, кто уже знаком с механизмом исключений в языке Java, постарайтесь их не использовать. Мы будем работать с ними немного позднее, этому будет посвящена одна из работ. Поэтому желательно свести использование исключений к минимуму и выполнять обработку ошибок с помощью условных операторов.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+#### Вариант задания №20: Необходимо реализовать одну функцию boolean check(String text);
+#### Данный интерфейс производит анализ строки по интересующему критерию. Требуются реализовать два класса для этого интерфейса. Первый класс должен возвращать true, если строка представляет из себя правильную скобочную последовательность (содержит только символы «(» «)», которые образуют правильное выражение). Второй класс должен возвращать true, если строка содержит возвращать true, если строка содержит правильную запись числа (в строке цифры от 0 до 9, и первая цифра не может быть 0). Необходимо чтобы приложение запросило у пользователя строку и выдало результаты анализа для обоих классов.
