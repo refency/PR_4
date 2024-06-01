@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 
 public class App {
   public static void main(String[] args) throws Exception {
-    String text = input_text("Type the text to check: ");
+    String text = InputText("Type the text to check: ");
 
     Brackets brackets = new Brackets();
     Numbers numbers = new Numbers();
@@ -13,7 +13,7 @@ public class App {
     System.out.println("Result of numbers interface: " + numbers.check(text));
   }
 
-  public static String input_text(String label) { // Input text from console
+  public static String InputText(String label) { // Input text from console
     try {
       System.out.print(Color("yellow") + label + Color("reset"));
       BufferedReader reader = new BufferedReader(new InputStreamReader(System.in)); // Call of system.in to read input from console by bufferedreader
